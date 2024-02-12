@@ -1,0 +1,198 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lab1 KV13 Shcherbyna</title>
+    <link rel="icon" type="image/x-icon" href="ic.ico">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet">
+</head>
+
+<body class="bg-body-tertiary flex-column min-vh-100">
+    <!-- Header -->
+    <header class="navbar navbar-expand-lg navbar-light bg-success-subtle text-info-emphasis p-4">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="#">
+                <img src="img/icon.webp" class="rounded-circle me-2" alt="..." style="width: 45px; height: 40px;">
+                Mental
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
+                <ul class="navbar-nav">
+                    <li class="nav-item">
+                        <a class="nav-link link-success" href="pages/profile.html">Profile</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link link-success" href="pages/login.html">Log in</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link link-success" href="pages/logout.html">Log out</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link link-success" href="pages/about.html">About</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </header>
+
+    <!-- Main Content -->
+    <main class="container mx-auto my-4 ">
+        <!-- Working Page of the Application -->
+        <section id="working-page" class="mb-8">
+            <h2 class="text-uppercase text-center text-success  ">Poll</h2>
+            <div class="container mt-5">
+              <!-- Question 1 -->
+              <div class="card mb-3">
+                  <div class="card-header">
+                      What are your main stress factors in everyday life?
+                  </div>
+                  <div class="card-body">
+                      <form>
+                          <div class="form-check">
+                              <input class="form-check-input" type="radio" name="stress" id="stress1" value="workload">
+                              <label class="form-check-label" for="stress1">Workload</label>
+                          </div>
+                          <div class="form-check">
+                              <input class="form-check-input" type="radio" name="stress" id="stress2" value="family_conflicts">
+                              <label class="form-check-label" for="stress2">Family conflicts</label>
+                          </div>
+                          <div class="form-check">
+                              <input class="form-check-input" type="radio" name="stress" id="stress3" value="financial_problems">
+                              <label class="form-check-label" for="stress3">Financial problems</label>
+                          </div>
+                          <div class="form-check">
+                              <input class="form-check-input" type="radio" name="stress" id="stress4" value="health">
+                              <label class="form-check-label" for="stress4">Health</label>
+                          </div>
+                      </form>
+                  </div>
+              </div>
+
+              <!-- Question 2 -->
+              <div class="card mb-3">
+                  <div class="card-header">
+                      What is your primary source of positive emotions?
+                  </div>
+                  <div class="card-body">
+                      <form>
+                          <div class="form-check">
+                              <input class="form-check-input" type="radio" name="positive" id="positive1" value="interaction_with_close_people">
+                              <label class="form-check-label" for="positive1">Interaction with close people</label>
+                          </div>
+                          <div class="form-check">
+                              <input class="form-check-input" type="radio" name="positive" id="positive2" value="accomplishing_tasks">
+                              <label class="form-check-label" for="positive2">Accomplishing tasks and achieving goals</label>
+                          </div>
+                          <div class="form-check">
+                              <input class="form-check-input" type="radio" name="positive" id="positive3" value="creative_activities">
+                              <label class="form-check-label" for="positive3">Creative activities (drawing, music, writing)</label>
+                          </div>
+                          <div class="form-check">
+                              <input class="form-check-input" type="radio" name="positive" id="positive4" value="traveling_and_new_experiences">
+                              <label class="form-check-label" for="positive4">Traveling and new experiences</label>
+                          </div>
+                      </form>
+                  </div>
+              </div>
+
+              <!-- Question 3 -->
+              <div class="card mb-3">
+                  <div class="card-header">
+                      How do you influence the emotional state of your close ones and surroundings?
+                  </div>
+                  <div class="card-body">
+                      <form>
+                          <div class="form-check">
+                              <input class="form-check-input" type="radio" name="influence" id="influence1" value="foster_positive_emotions">
+                              <label class="form-check-label" for="influence1">Foster positive emotions and support</label>
+                          </div>
+                          <div class="form-check">
+                              <input class="form-check-input" type="radio" name="influence" id="influence2" value="resolve_conflicts">
+                              <label class="form-check-label" for="influence2">Resolve conflicts and improve others' mood</label>
+                          </div>
+                          <div class="form-check">
+                              <input class="form-check-input" type="radio" name="influence" id="influence3" value="induce_negative_emotions">
+                              <label class="form-check-label" for="influence3">Induce negative emotions through your actions or words</label>
+                          </div>
+                          <div class="form-check">
+                              <input class="form-check-input" type="radio" name="influence" id="influence4" value="empathize_but_not_influence">
+                              <label class="form-check-label" for="influence4">Empathize but do not influence the emotional state of others</label>
+                          </div>
+                      </form>
+                  </div>
+              </div>
+
+              <!-- Question 4 -->
+              <div class="card mb-3">
+                  <div class="card-header">
+                      What is your favorite strategy for stress relief?
+                  </div>
+                  <div class="card-body">
+                      <form>
+                          <div class="form-check">
+                              <input class="form-check-input" type="radio" name="relief" id="relief1" value="hanging_out_with_friends">
+                              <label class="form-check-label" for="relief1">Hanging out with friends</label>
+                          </div>
+                          <div class="form-check">
+                              <input class="form-check-input" type="radio" name="relief" id="relief2" value="meditation_or_yoga">
+                              <label class="form-check-label" for="relief2">Meditation or yoga</label>
+                          </div>
+                          <div class="form-check">
+                              <input class="form-check-input" type="radio" name="relief" id="relief3" value="sports_or_physical_activity">
+                              <label class="form-check-label" for="relief3">Sports or physical activity</label>
+                          </div>
+                          <div class="form-check">
+                              <input class="form-check-input" type="radio" name="relief" id="relief4" value="culinary_experiments">
+                              <label class="form-check-label" for="relief4">Culinary experiments in the kitchen</label>
+                          </div>
+                      </form>
+                  </div>
+              </div>
+
+              <!-- Question 5 -->
+              <div class="card mb-3">
+                  <div class="card-header">
+                      How do you react to your own mistakes or failures?
+                  </div>
+                  <div class="card-body">
+                      <form>
+                          <div class="form-check">
+                              <input class="form-check-input" type="radio" name="reaction" id="reaction1" value="accept_them_as_part_of_learning">
+                              <label class="form-check-label" for="reaction1">Accept them as part of the learning process and an opportunity for growth</label>
+                          </div>
+                          <div class="form-check">
+                              <input class="form-check-input" type="radio" name="reaction" id="reaction2" value="begin_to_feel_sad_and_stressed">
+                              <label class="form-check-label" for="reaction2">Begin to feel sad and experience significant stress</label>
+                          </div>
+                          <div class="form-check">
+                              <input class="form-check-input" type="radio" name="reaction" id="reaction3" value="quickly_move_on_to_finding_solutions">
+                              <label class="form-check-label" for="reaction3">Quickly move on to finding solutions and correcting mistakes</label>
+                          </div>
+                          <div class="form-check">
+                              <input class="form-check-input" type="radio" name="reaction" id="reaction4" value="feel_loss_of_confidence_and_negative_attitude">
+                              <label class="form-check-label" for="reaction4">Feel a loss of confidence and have a negative attitude towards yourself</label>
+                          </div>
+                      </form>
+                  </div>
+              </div>
+              <div class="">
+                <button type="submit" class="btn btn-secondary">Submit</button>
+            </div>
+          </div>
+          </section>
+    </main>
+    <!-- Footer -->
+    <footer class="bg-success-subtle ttext-success p-4">
+        <div class="container mx-auto ">
+            <p>&copy; 2024 Mental</p>
+        </div>
+    </footer>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.min.js"></script>
+</body>
+
+</html>
